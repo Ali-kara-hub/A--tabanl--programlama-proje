@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>akimuralist-Giriş Yap</title>
+        <link rel="stylesheet" href="stil.css">
+        <link rel="icon" href="başlıklogo.png">
+    </head>
+    <body style="color: black; background-color: #f4f4f9; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0;">
+        <header class="header">
+            <a href="anime.html">
+              <img class="logo" src="zlogo.png" alt="anime">
+            </a>
+          </header>
+
+          <div class="logincontainer">
+            <h2>Giriş Yap</h2>
+            <form id="loginform">
+                <div class="formgrup">
+                    <label for="email">E-posta:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="formgrup">
+                    <label for="password">Şifre:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit">Giriş Yap</button>
+                <p id="mesaj"></p>
+            </form>
+            <p>Hesabınız yok mu? <a href="register.html" class="signup-link">Üye Ol</a></p>
+        </div>        
+        <script src="login.js"></script>
+    </body>
+</html>

@@ -1,0 +1,299 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Jaro", sans-serif;
+    color: white;
+}
+body{
+    background-color: #121212;
+    padding: 0 250px;
+    scroll-behavior: smooth;
+    background-image: url("zresim1"), url("zresim2.jpg");
+    background-position: left top, right top; /* Resimleri sola ve sağa yerleştir */
+    background-repeat: no-repeat, no-repeat; /* Resimlerin tekrarlamasını engelle */
+    background-size: 250px 825px , 250px 825px; /* Resimleri boyutlandırın (isteğe göre ayarlayın) */
+  
+}
+.logo{
+    margin-bottom:  15px; ;
+    width: 300px;
+    height: 50px;
+    /* background-position: center; */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.logo-1{
+    width:300px;
+    height:50px ;
+}
+.navigation{
+    display: flex;
+    flex-direction: row;
+    font-size:18px;
+    width: 100%;
+    background-color: darkblue;
+}
+.nav{
+    position: relative;
+    font-size: 20px;
+    padding: 10px 12px;
+}
+.nav a{
+    display: block;
+}
+.nav:hover{
+    background-color: #121212;
+    transition: 0.5s;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%; /* Position below the parent nav item */
+    left: 0;
+    background-color: #444;
+    min-width: 150px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.dropdown-content a {
+    color: white;
+    padding: 8px 12px;
+    text-decoration: none;
+    display: block;
+  }
+  
+.dropdown-content a:hover {
+    background-color: #555;
+  }
+  
+  /* Show dropdown on hover */
+.nav.dropdown:hover .dropdown-content {
+    display: block;
+  }
+.welcome{
+    width: 100%;
+    background-color: darkslategrey;
+    padding-top: 6px;
+    font-size: 20px;
+    border-bottom: 1px solid white;
+}
+.welcome h3{
+    opacity: 1;
+}
+.anime-suggestions{
+    margin:20px 5px 5px 5px;
+}
+.text{
+    font-size: 18px;
+    border-bottom: 1px solid white;
+}
+.blocks{
+    margin-top: 12px;
+    width: 100%;
+    height: 250px;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+}
+.block{
+    height: 100%;
+    width: 20%;
+    background-color: red;
+    margin-right:12px ;
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+.block:hover {
+  transform: scale(1.05); /* Bloku biraz büyütür */
+  opacity: 0.7; /* Hafif karartma efekti */
+}
+.block.end{
+    margin:0;
+}
+/* Footer Container */
+.footer {
+    background-color: #121212; /* Arka plan rengi */
+    color: #fff; /* Yazı rengi */
+    text-align: center; /* Ortala */
+    padding: 20px 0; /* Üst ve alt boşluk */
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Footer Content */
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  /* Footer Links */
+  .footer-links {
+    margin-top: 10px;
+  }
+  
+  .footer-links a {
+    color: #ff6b6b; /* Link rengi */
+    text-decoration: none; /* Alt çizgiyi kaldır */
+    margin: 0 10px;
+    transition: color 0.3s; /* Renk değişimine yumuşak geçiş ekle */
+  }
+  
+  .footer-links a:hover {
+    color: #ffd700; /* Hover sırasında farklı renk */
+  }
+  .kutular{
+    margin-top: 12px;
+    width: 100%;
+    height: 250px;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+  }
+.kutu{
+    height: 100%;
+    width: 20%;
+    background-color: red;
+    margin-right:12px ;
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+.kutu:hover {
+  transform: scale(1.05); /* Bloku biraz büyütür */
+  opacity: 0.7; /* Hafif karartma efekti */
+}
+.kutu.end{
+    margin:0;
+}
+.search-container {
+    margin: 20px 0;
+    text-align: center;
+}
+
+#search-bar {
+    width: 80%;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #444;
+    border-radius: 5px;
+    background-color: #222;
+    color: white;
+}
+
+#search-bar:focus {
+    outline: none;
+    border-color: rgb(0, 0, 137);
+}
+.logo{
+  display: flex;
+  justify-content:space-between;
+}
+.sing{
+  display: flex;
+  flex-direction: row;
+}
+.login-button {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 1000; /* Diğer elemanların üstünde görünmesi için */
+  margin-right: 250px;
+  margin-top: 10px;
+}
+.my-button {
+  background-color: blue;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.my-button:hover {
+  background-color: #e65a5a;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+
+select, button {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccccccc1;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #6d1313;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  width: 100%;
+  padding: 10px;
+}
+
+button:hover {
+  background-color: #6d1313;
+}
+
+#mesaj {
+  margin-top: 10px;
+  color: red;
+  font-size: 14px;
+}
+
+.logincontainer {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.formgrup {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #555;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.signup-link {
+  color: #6d1313;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.signup-link:hover {
+  color: #840000;
+  text-decoration: underline;
+}
